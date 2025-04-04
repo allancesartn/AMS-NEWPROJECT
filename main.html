@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS ®</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agro Market Service ®</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="cadastro-cliente-link">Cadastro Cliente</a></li>
+                <li><a href="#" id="cadastro-prestador-link">Cadastro Prestador</a></li>
+                <li><a href="#" id="avaliacoes-link">Avaliações</a></li>
+                <li><a href="#" id="fale-link">Fale com a Empresa</a></li>
+                <li><a href="#" id="admin-link">Administração</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="thome">
+            <h2>Bem-vindo à Homepage</h2>
+            <p>Aqui você encontra prestadores de serviço para o agronegócio!</p>
+            </div>
+        </section>
+        <section id="cadastro-cliente" style="display:none;">
+            <h2>Cadastro de Cliente</h2>
+            <form id="form-cliente">
+                <input type="text" id="nome-cliente" placeholder="Nome"><br>
+                <input type="email" id="email-cliente" placeholder="Email"><br>
+                <input type="tel" id="telefone-cliente" placeholder="Telefone"><br>
+                <button type="button" id="btn-cadastrar-cliente">Cadastrar</button>
+            </form>
+        </section>
+        <section id="cadastro-prestador" style="display:none;">
+            <h2>Cadastro de Prestador</h2>
+            <form id="form-prestador">
+                <input type="text" id="nome-prestador" placeholder="Nome"><br>
+                <input type="text" id="especialidade-prestador" placeholder="Especialidade"><br>
+                <input type="tel" id="telefone-prestador" placeholder="Telefone"><br>
+                <button type="button" id="btn-cadastrar-prestador">Cadastrar</button>
+            </form>
+        </section>
+        <section id="avaliacoes" style="display:none;">
+            <h2>Sistema de Avaliações</h2>
+            <p>Deixe sua avaliação sobre nossos prestadores.</p>
+            <form id="form-avaliacao">
+                <input type="text" id="cliente-id" placeholder="ID Cliente"><br>
+                <input type="text" id="prestador-id" placeholder="ID Prestador"><br>
+                <input type="number" id="nota" placeholder="Nota (1-5)" min="1" max="5"><br>
+                <textarea id="comentario" placeholder="Comentário"></textarea><br>
+                <button type="button" id="btn-avaliar">Enviar Avaliação</button>
+            </form>
+        </section>
+        <section id="fale" style="display:none;">
+            <h2>Fale com a Empresa</h2>
+            <p>Entre em contato conosco!</p>
+            <form id="form-contato">
+                <input type="text" id="nome-contato" placeholder="Nome"><br>
+                <input type="email" id="email-contato" placeholder="Email"><br>
+                <textarea id="mensagem-contato" placeholder="Mensagem"></textarea><br>
+                <button type="button" id="btn-contato">Enviar Mensagem</button>
+            </form>
+        </section>
+        <section id="admin" style="display:none;">
+            <h2>Administração</h2>
+            <p>Gerencie clientes e prestadores.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
